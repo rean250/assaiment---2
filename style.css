@@ -47,7 +47,7 @@ img {
   font-size: 1rem;
   font-weight: 400;
 }
-/----------------- Styling CSS -----------------/ header {
+header {
   padding: 1.2rem;
 }
 header .container {
@@ -100,14 +100,14 @@ nav {
 .header-right ul li a:hover {
   color: var(--fourty-color);
 }
-/------------ Banner Section ------------/ .banner-text {
-  border-radius: 16px;
+.banner-text {
+  /* border-radius: 16px; */
   background: linear-gradient(
       180deg,
       rgba(19, 19, 24, 0.8) 0%,
       rgba(19, 19, 24, 0) 100%
     ),
-    url('Images/baner\ 13.png');
+    url('./Images/baner\ 13.png');
 
   background-size: cover;
   background-repeat: no-repeat;

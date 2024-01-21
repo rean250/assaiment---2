@@ -1,0 +1,667 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --primary-color: #131318;
+  --secondary-color: rgba(19, 19, 24, 0.7);
+  --tarnery-color: #5a5a5d;
+  --fourty-color: #ff5400;
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;
+}
+.container {
+  margin: 0 5rem;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+.primary-btn {
+  background-color: var(--fourty-color);
+  border-radius: 5px;
+  color: #fff;
+  padding: 15px 20px;
+  display: inline-block;
+  margin-top: 1rem;
+}
+.title {
+  color: var(--primary-color);
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+.description {
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+  font-size: 1rem;
+  font-weight: 400;
+}
+/----------------- Styling CSS -----------------/ header {
+  padding: 1.2rem;
+}
+header .container {
+  margin: 0 4rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  margin-top: 6px;
+}
+.logo-text {
+  padding: 0 10px;
+}
+.header-left .logo-text a h2 {
+  color: var(--primary-color);
+  font-size: 36px;
+  font-weight: 800;
+}
+.header-left .logo-text a h2 span {
+  color: var(--fourty-color);
+}
+.header-right label,
+#click {
+  display: none;
+  visibility: hidden;
+}
+.header-right ul {
+  display: flex;
+}
+.header-right ul li a {
+  padding: 10px;
+  color: #424247;
+  font-size: 18px;
+  font-weight: 400;
+}
+.header-right ul li a.active {
+  color: var(--fourty-color);
+}
+.header-right ul li a:active {
+  color: var(--fourty-color);
+}
+.header-right ul li a:hover {
+  color: var(--fourty-color);
+}
+/------------ Banner Section ------------/ .banner-text {
+  border-radius: 16px;
+  background: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url('Images/baner\ 13.png');
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 10rem 0;
+  object-fit: cover;
+  text-align: center;
+}
+.banner-text h2 {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 800;
+}
+.banner-text p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  width: 70%;
+  padding: 2rem;
+  margin: 0 auto;
+}
+.form {
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 1rem 10px;
+  width: 60%;
+  margin: 0 auto;
+}
+.form form {
+  display: flex;
+}
+form > input,
+select {
+  border-radius: 8px;
+  background: #fff;
+  padding: 15px 20px;
+  border: none;
+  margin: 0 5px;
+  width: 25%;
+}
+.btn {
+  background-color: var(--fourty-color);
+  color: #fff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+input.primary-btn {
+  margin-top: 0px;
+}
+
+#Packages {
+  padding: 2rem 0;
+}
+.pack-content {
+  display: flex;
+  gap: 5rem;
+}
+.pack-text {
+  width: 50%;
+  text-align: left;
+  padding: 0rem 3rem;
+}
+.pack-text ul {
+  margin-bottom: 1rem;
+}
+.pack-text ul li {
+  list-style-type: disc;
+  margin: 0rem 0rem 1rem 2rem;
+  color: var(--secondary-color);
+}
+
+.pack-img {
+  margin-top: 1rem;
+}
+.pack-img img {
+  width: 100%;
+  height: 80%;
+}
+
+.place-title-text {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+.place-picture {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 15px;
+}
+.desti-img {
+  position: relative;
+}
+.desti-img h1 {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  color: #fff;
+}
+.desti-img img {
+  height: 100%;
+}
+.maldives {
+  grid-column: 1 / 7;
+}
+.indonesia {
+  grid-column: 7 / 13;
+}
+.srilanka {
+  grid-column: 1 / 4;
+}
+.america {
+  grid-column: 4 / 9;
+}
+.kashmir {
+  grid-column: 9 / 13;
+}
+.bangladesh {
+  grid-column: 1 / 6;
+}
+.bandorban {
+  grid-column: 6/ 13;
+}
+
+#Testimonial {
+  padding: 2rem 0;
+  margin: 4rem 0;
+}
+.choose-text {
+  text-align: center;
+}
+.choose-text h2.title {
+}
+.choose-text p.description {
+}
+.choose-box {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.choose-box {
+  margin-top: 3rem;
+}
+.card {
+  padding: 2rem;
+}
+.card img {
+  width: 10%;
+}
+.card h3.title {
+  font-size: 1.5rem;
+}
+.box-des {
+}
+.choose-box .box-1 {
+  border-radius: 16px;
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background: rgba(251, 181, 99, 0.05);
+}
+.choose-box .box-2 {
+  border-radius: 16px;
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background: rgba(41, 206, 246, 0.05);
+}
+.box-3 {
+  margin: 1.5rem auto 0 auto;
+  width: 50%;
+  border-radius: 16px;
+  border: 1px solid rgba(233, 68, 68, 0.2);
+  background: rgba(233, 68, 68, 0.05);
+}
+.box-des {
+  color: var(--tarnery-color);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.Nile-Basin-2 {
+  margin: 30px 0px;
+}
+.Nile-Basin-2 .author-text {
+  position: absolute;
+  top: 14%;
+  left: 5%;
+  width: 50%;
+  border-radius: 16px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 3rem;
+}
+.Nile-Basin-img {
+  position: relative;
+}
+.Nile-Basin-img img {
+  height: 100%;
+}
+
+.author-text {
+  position: absolute;
+  top: 14%;
+  right: 5%;
+  width: 50%;
+  border-radius: 16px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 3rem;
+}
+.author-text a > i {
+  color: var(--fourty-color);
+}
+.author-text .price {
+  color: var(--fourty-color);
+}
+
+.Over-View-title {
+  font-size: 2.5rem;
+}
+.Over-View-list li {
+  color: var(--primary-color);
+}
+
+.pack-img video {
+  height: 360px;
+  width: 100%;
+}
+.for-video {
+  position: relative;
+}
+.for-video h2 {
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 50%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.subscribers {
+  display: flex;
+  gap: 20px;
+}
+.subscribe-form {
+  width: 40%;
+  padding: 2rem;
+}
+.subscribe-form h2 {
+  font-size: 24px;
+  font-weight: 800;
+}
+/* .subscribe-form p{} */
+.subscribe-form input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0px;
+  border-radius: 8px;
+  border: 1px solid rgba(19, 19, 24, 0.301);
+  background: rgba(19, 19, 24, 0.05);
+}
+input[type='submit'] {
+  border-radius: 8px;
+  background: #ff5400;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+}
+.subscribe-img {
+  width: 57%;
+}
+.img-with-discount {
+  position: relative;
+}
+
+.img-with-discount .offer {
+  background-color: var(--fourty-color);
+  text-align: center;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  padding: 12px;
+  transform: rotate(330deg);
+  transform-origin: -6% 40%;
+}
+
+.img-with-discount .offer h3 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+}
+.img-with-discount .offer h2 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+footer {
+  padding: 3rem 0;
+  background: rgba(19, 19, 24, 0.05);
+}
+.footer-heading .header-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-heading .description {
+  text-align: center;
+  width: 50%;
+  margin: 20px auto;
+}
+.social-menu ul {
+  display: flex;
+  justify-content: center;
+}
+.social-menu {
+  border-bottom: 1px solid rgba(19, 19, 24, 0.2);
+  padding-bottom: 30px;
+}
+.social-menu ul li a {
+  padding: 10px;
+  margin-top: 10px;
+  color: black;
+}
+
+.footer-bottom p {
+  color: var(--primary-color);
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 30px;
+}
+@media screen and (max-width: 600px) {
+  header .container {
+    margin: 0 2rem;
+  }
+  .container {
+    margin: 0 3rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .header-right label {
+    display: block;
+    visibility: visible;
+    margin-top: 12px;
+  }
+  .header-right label {
+    font-size: 25px;
+  }
+  .header-right input {
+    visibility: hidden;
+    display: none;
+  }
+  .header-right ul li {
+    text-align: center;
+    padding: 6px;
+  }
+  .header-right ul {
+    position: absolute;
+    top: 5rem;
+    left: 8%;
+    background: black;
+    visibility: hidden;
+    display: block;
+    width: 83%;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  .header-right ul li a {
+    color: #ededed;
+  }
+  input#click:checked ~ ul {
+    visibility: visible;
+  }
+
+  .banner-text h2 {
+    font-size: 2rem;
+  }
+  .banner-text {
+    padding: 3rem 0;
+  }
+  .form form {
+    flex-direction: column;
+  }
+  form > input,
+  select {
+    margin: 5px 0px;
+    width: 100%;
+  }
+  .btn {
+    justify-content: center;
+  }
+
+  .pack-content {
+    gap: 2rem;
+    flex-direction: column;
+  }
+  .pack-text {
+    width: 100%;
+    padding: 0rem 1rem;
+  }
+  .pack-img {
+    margin-top: 0;
+  }
+  .pack-text ul li {
+    list-style-type: disc;
+    margin: 0rem 0rem 1rem 1rem;
+  }
+  #Testimonial {
+    margin: 0rem;
+  }
+  .choose-box {
+    flex-direction: column;
+  }
+  .box-3 {
+    width: 100%;
+  }
+  .card h3.title {
+    font-size: 1.2rem;
+  }
+  .card img {
+    width: 16%;
+  }
+  .pack-img video {
+    height: auto;
+    width: 100%;
+  }
+  .for-video h2 {
+    top: 20%;
+    font-size: 1rem;
+  }
+
+  .subscribers {
+    flex-direction: column;
+  }
+  .subscribe-form {
+    width: 100%;
+    padding: 1rem;
+  }
+  .subscribe-img {
+    width: 100%;
+  }
+  .img-with-discount .offer h3 {
+    font-size: 14px;
+  }
+  .img-with-discount .offer h2 {
+    font-size: 20px;
+  }
+  .Nile-Basin-img img {
+    height: 400px;
+  }
+  .author-text {
+    top: 20%;
+    right: 5%;
+    width: 90%;
+    padding: 1rem;
+  }
+  .Nile-Basin-2 .author-text {
+    top: 20%;
+    left: 5%;
+    width: 90%;
+    padding: 1rem;
+  }
+  .maldives {
+    grid-column: 1 / -1;
+  }
+  .indonesia {
+    grid-column: 1 / -1;
+  }
+  .srilanka {
+    grid-column: 1 / -1;
+  }
+  .america {
+    grid-column: 1 / -1;
+  }
+  .kashmir {
+    grid-column: 1 / -1;
+  }
+  .bangladesh {
+    grid-column: 1 / -1;
+  }
+  .bandorban {
+    grid-column: 1 / -1;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  header .container {
+    margin: 0 1rem;
+  }
+  .container {
+    margin: 0 2rem;
+  }
+  .header-left .logo a img {
+    width: 80%;
+  }
+  .logo-text {
+    padding: 0;
+  }
+  .header-left .logo-text a h2 {
+    font-size: 22px;
+  }
+  .header-right label {
+    font-size: 20px;
+  }
+  .header-right label {
+    margin-top: 5px;
+  }
+
+  .banner-text p,
+  .pack-text {
+    padding: 0;
+  }
+  .title {
+    font-size: 1.2rem;
+  }
+  .primary-btn {
+    padding: 12px;
+  }
+  .satorini-img img {
+    height: 400px;
+  }
+  .author-text,
+  .satorini-2 .author-text {
+    top: 20%;
+    right: 5%;
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .maldives {
+    grid-column: 1 / -1;
+  }
+  .indonesia {
+    grid-column: 1 / -1;
+  }
+  .srilanka {
+    grid-column: 1 / -1;
+  }
+  .america {
+    grid-column: 1 / -1;
+  }
+  .kashmir {
+    grid-column: 1 / -1;
+  }
+  .bangladesh {
+    grid-column: 1 / -1;
+  }
+  .bandorban {
+    grid-column: 1 / -1;
+  }
+}
